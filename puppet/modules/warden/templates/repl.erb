@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+export ROOT_PATH="${ROOT_PATH:-<%= root %>}/warden"
+
+if [[ -n "$@" ]]; then
+  exec <%= run %> "$@"
+else
+  exec <%= run %> exec bin/warden
+fi
