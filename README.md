@@ -9,16 +9,15 @@ Clone `vagrant-warden` and `cd` into it
     git clone git://github.com/silas/vagrant-warden.git
     cd vagrant-warden
 
-Init and update the git submodules
+Ensure you have the necessary dependencies installed
 
-    git submodule init
-    git submodule update
+    bundle install
 
-`up` the box (this could take a very long time)
+Build the virtual machine using Vagrant (this could take a very long time)
 
     vagrant up
 
-`ssh` to the box and start the warden server
+Connect to the box using `ssh` and start the warden server
 
     vagrant ssh
     sudo warden-server
