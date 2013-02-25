@@ -13,5 +13,11 @@ Vagrant::Config.run do |config|
 
     chef.add_recipe "debootstrap"    
     chef.add_recipe "warden"
+   
+    chef.json = {
+      :warden => {
+        :git_repo => 'git://github.com/thoward/warden.git' 
+      }
+    }
   end
 end
