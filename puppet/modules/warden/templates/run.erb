@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-[ -s "/usr/local/rvm/scripts/rvm" ] && . "/usr/local/rvm/scripts/rvm"
-
-rvm use "<%= rvm %>"
-
-cd "${ROOT_PATH:-<%= root %>}"
-
-exec bundle "$@"
