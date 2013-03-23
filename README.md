@@ -6,7 +6,7 @@ Install and run Cloud Foundry's [warden][warden] in [Vagrant][vagrant].
 
 Clone `vagrant-warden` and `cd` into it
 
-    git clone git://github.com/silas/vagrant-warden.git
+    git clone git://github.com/thoward/vagrant-warden.git
     cd vagrant-warden
 
 Ensure you have the necessary dependencies installed
